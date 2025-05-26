@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart | AgriBazaar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div>
+    <nav class="container">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="AgriBazaar Logo">
+        <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  </div>
+  <nav class="container">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="cart.html">Cart (<span id="cartCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="container">
+  <h1 style="margin:1rem 0;">Shopping Cart</h1>
+  <div id="cartItems"></div>
+  <h2 id="total" style="margin-top:1rem;"></h2>
+  <button id="clearCart" style="margin-top:1rem;">Clear Cart</button>
+</section>
+
+<h2>Checkout Details</h2>
+<form id="checkout-form">
+  <label>Full Name</label>
+  <input type="text" id="name" required>
+
+  <label>Email</label>
+  <input type="email" id="email" required>
+
+  <label>Phone Number</label>
+  <input type="tel" id="phone" required>
+
+  <label>Address</label>
+  <textarea id="address" rows="3" required></textarea>
+
+  <button type="submit">Place Order</button>
+</form>
+<div id="confirmation"></div>
+
+
+
+<footer>
+  <div class="footer-content">
+    <img src="images/logo.jpg" alt="AgriBazaar Logo" class="footer-logo">
+    
+    <div class="footer-info">
+      <p><strong>Address:</strong> 123 Farm Road, Accra, Ghana</p>
+      <p><strong>Email:</strong> <a href="mailto:info@agribazaar.com">info@agribazaar.com</a></p>
+      <p><strong>Phone:</strong> +233 575527503</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/x.png" alt="X"></a>
+    </div>
+
+    <p class="footer-copy">&copy; 2025 AgriBazaar. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

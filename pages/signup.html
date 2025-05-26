@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign up</title>
+<link rel="stylesheet" href="style-auth.css">
+<script  type="module" src="../static/signup.js"></script>
+<h1>Welcome to AgriBazzar</h1><br><br>
+</head>
+<body>
+<div class="auth-container">
+<h1>Sign Up</h1>
+
+<form id="signupForm">
+<input type="text" id="firstName" placeholder="first name" required>
+<input type="text" id="lastName" placeholder="last name" required>
+<input type="email" id="email" placeholder="email" required>
+<input type="password" id="password" placeholder="password" required>
+
+<button id="submitbutton" type="submit">Submit</button>
+<a href="./login.html">login here</a>
+
+</form>
+</div>
+</body>
+<script type="module" src="../static/firebaseConfiguration.js" ></script>
+
+</html>
